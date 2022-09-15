@@ -1,0 +1,28 @@
+{% extends 'default.html'%}
+{%load static%}
+
+{%block conteudo%}
+ <div class="tudo">
+    <div>
+        <figure class="fotos">
+        <div><img src='{% static "img_prin/rio.jpg" %}' class="img_rio" alt="..."> </div>
+        <figcaption >BRASIL</figcaption>
+        </figure>
+    </div>
+    <div>
+        <figure class="fotos">
+        <div><img class="alemanha" src='{% static "img_prin/alemanha_prin.jpg"%}' alt=""> </div>
+        <figcaption >ALEMANHA</figcaption>
+        </figure>
+    </div>
+    <div>
+        <figure class="fotos">
+        <div><img class="italia" src='{% static "img_prin/italiaa.jpg"%}' alt=""> </div>
+        <figcaption >ITÁLIA</figcaption>
+        </figure>
+    </div>
+</div>
+
+
+{%endblock%}
+

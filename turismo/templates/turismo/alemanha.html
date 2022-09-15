@@ -1,0 +1,130 @@
+{% extends 'default.html'%}
+{%load static%}
+
+{%block conteudo%}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turistando</title>
+    <link rel="stylesheet" href="{%static 'CSS/alemanha.css'%}">
+</head>
+<body>
+
+  <section class="container">
+    <div class="foto_principal">
+        <img class="alemanha_prin" src='{% static "img/principal.jpg"%}' alt="">
+    </div>
+
+    <div> <h1>Pontos Turísticos da Alemanha</h1> </div>
+  </section>
+
+
+
+
+  <div class="texto_prin">
+    <h1>Iremos apresentar aqui, os pontos turísticos mais visitados da Alemanha</h1>
+    <p>...</p>
+  </div>
+
+
+  <div>
+    <figure class="fotos">
+      <div><img src='{% static "img/castelo_heidelberg.jpg" %}' class="img_heidelberg" alt="..."> </div>
+      <figcaption>
+            <h2>Castelo de Heidelberg</h2><br>
+            <p>É uma construção medieval da Alemanha.<br>
+                Como símbolo do romantismo alemão, o castelo atrai inúmeros turistas, é um dos pontos turísticos mais famosos da Alemanha.</p><br>
+            <p>Sua primeira estrutura foi construída antes de 1214 e, mais tarde, expandida para dois castelos.</p><br>
+            <p>As estruturas atuais tinham sido expandidas em 1650 e depois foram destruídas por guerras e incêndios.</p>
+      </figcaption>
+    </figure>
+  </div>
+
+
+  <div>
+    <figure class="fotos">
+    <div><img src='{% static "img/catelo_neuschwanstein.jpg" %}' class="img_neuschwanstein" alt="..."> </div>
+      <figcaption>
+        <h2>Castelo de Neuschwanstein</h2><br>
+        <p>O castelo é um cartão postal da Alemanha eum dos pontos turístico mais famoso da Baviera.</p>
+        <p>Cerca de 1,5 milhões de turistas visitam o lugar anualmente. O castelo que inspirou Walt Disney, tem um limite de 6 mil pessoas por dia. <br>
+        <p>O Castelo fica próximo aos Alpes e começou a ser construído em 1869 por ordem do rei da Baviera Ludwig II.<br>
+             Para ele, Neuschwanstein representava o ideal perfeito de um castelo medieval.</p>
+
+     </figcaption>
+    </figure>
+  </div>
+  <div>
+    <figure class="fotos">
+      <div><img src='{% static "img/Catedral_de_Colônia.jpg" %}' class="img_colonia" alt="..."> </div>
+      <figcaption>
+        <h2>Catedral de Colônia</h2><br>
+        <p>A Catedral de Colônia é uma verdadeira obra-prima da arquitetura gótica.</p>
+        <p>Entretanto, pelo seu longo período de construção, aproximadamente seis séculos (entre 1248 e 1880), engloba e une vários estilos arquitetônicos.</p>
+        <p>A catedral com cerca de 144 metros de comprimento e a cúpula com mais de 43 metros de altura, o que torna a Igreja a terceira maior do mundo.</p>
+        <p>O Templo dos Três Reis Magos data do século XIII e é a maior obra em ouro da Europa medieval.</p>
+    </figcaption>
+    </figure>
+  </div>
+
+
+  <div>
+    <figure class="fotos">
+      <div><img src='{% static "img/_meorial_muro_berlin.jpg" %}' class="img_berlin" alt="..."> </div>
+      <figcaption>
+        <h2>Memorial ao muro de Berlin</h2>
+        <p> Construído em 1961. No auge de sua existência, percorria um perímetro de 155 km pelo território da cidade,<br>
+            dividindo-a em duas partes: oriental e ocidental.</p>
+        <p> Foi derrubado em 9 de novembro de 1989, porém é um dos atrativos mais visitados de Berlim e um dos mais importantes pontos turísticos da Alemanha.</p>
+        <p> Atrás dele, também foi preservada uma área chamada de faixa da morte, corredor paralelo ao muro dotado de torres de observação, <br>
+            onde ficavam soldados incumbidos de impedir as fugas de um lado para o outro.</p>
+    </figcaption>
+    </figure>
+  </div>
+
+
+  <div>
+    <figure class="fotos">
+      <<div><img src='{% static "img/Igreja de Nossa Senhora (Frauenkirche)_Dresden.jpg" %}' class="img_Frauenkirche" alt="..."> </div>
+      <figcaption>
+        <h2>Igreja de Nossa Senhora (Frauenkirche), em Dresden</h2>
+        <p>A Frauenkirche em Dresden é um dos pontos turísticos mais populares da cidade</p>
+        <p>A Igreja foi completamente destruída durante a Segunda Guerra Mundial, restando apenas algumas paredes e a fundação.</p>
+        <p>Entre 1994 e 2005, ela foi reconstruída e restaurada com completa atenção aos detalhes.</p>
+    </figcaption>
+    </figure>
+  </div>
+
+
+
+  <div>
+    <figure class="fotos">
+      <div><img src='{% static "img/postão_de_Brandenburgo.jpg" %}' class="img_Brandenburgo" alt="..."> </div>
+      <figcaption>
+        <h2>Postão de Brandenburgo</h2>
+        <p>Essa é a principal atração de Berlim e um dos símbolos do país.</p>
+        <p>O Brandenburger Tor foi construído entre 1789 e 1793 e é um dos portões em estilo romano que restaram na Europa</p>
+        <p>Quando Berlim era dividida pelo Muro, ele ficava diretamente na fronteira entre Berlim Oriental e Ocidental.</p>
+    </figcaption>
+    </figure>
+  </div>
+
+
+  <script>
+    function updatemenu() {
+      if (document.getElementById('responsive-menu').checked == true) {
+      document.getElementById('menu').style.borderBottomRightRadius = '0';
+      document.getElementById('menu').style.borderBottomLeftRadius = '0';
+      }else{
+        document.getElementById('menu').style.borderRadius = '10px';
+      }
+    }
+  </script>
+{%endblock%}
+</body>
+</html>
